@@ -1,0 +1,31 @@
+<html>
+
+<head>
+<title>Random Sound</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(function(){
+    $(".various"+(new Date().getTime() % 2)).css("display", "block");
+});
+</script>
+</head>
+
+
+<body>
+<h1>What do you hear?</h1>
+
+<div id-="fancy_box">
+    <div id="inline" class="various0" style="display:none;">
+        <div style="padding:20px;">
+             This is the content of that shows inside the fancybox modal 1.
+       </div>
+    </div>
+    <div id="inline" class="various1" style="display:none;">
+        <div style="padding:20px;">
+             This is the content of that shows inside the fancybox modal 2.
+       </div>
+    </div>
+</div>
+</body>
+</html>
