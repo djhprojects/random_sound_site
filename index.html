@@ -1,13 +1,24 @@
 <html>
 
 <head>
-<title>Random Sound</title>
+<title>Random Survey Button</title>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
-$(function(){
-    $(".various"+(new Date().getTime() % 2)).css("display", "block");
-});
+    var links = [
+        "https://www.esurveycreator.com/s/c64b7b5",
+        "https://www.esurveycreator.com/s/40c820c"];
+
+    openStuff = function () {
+        // get a random number between 0 and the number of links
+        var randIdx = Math.random() * links.length;
+        // round it, so it can be used as array index
+        randIdx = parseInt(randIdx, 10);
+        // construct the link to be opened
+        var link = 'http://' + links[randIdx];
+        // open it in a new window
+        window.open(link);
+    };
 </script>
 </head>
 
@@ -15,25 +26,6 @@ $(function(){
 <body>
 <h1>Please answer the following survey</h1>
 
-<div id-="fancy_box">
-    <div id="inline0" class="various0" style="display:none;">
-        <div style="padding:20px;">
-             The below is site 1
-       </div>
-
-        <iframe src="https://www.uclouvain.be/en/sites/louvain-la-neuve" allowfullscreen="True">
-            <p>Your browser does not support iframes.</p>
-        </iframe>
-
-    </div>
-    <div id="inline1" class="various1" style="display:none;">
-        <div style="padding:20px;">
-             The below is site 2
-       </div>
-        <iframe src="https://www.worldbookday.com/" allowfullscreen="True">
-            <p>Your browser does not support iframes.</p>
-        </iframe>
-    </div>
-</div>
+<button onclick="openStuff();">Click here to go somewhere else!</button>
 </body>
 </html>
