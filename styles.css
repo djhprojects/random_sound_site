@@ -1,6 +1,7 @@
 .button {
-    background-color: #4CAF50; /* Green */
+    background-color: #0489B1; /* Blue (hopefully)*/
     border: none;
+    align: center;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -15,3 +16,10 @@ body {
     font-family: 'Montserrat';
     font-size: 30px;
 }
+
+.logo {
+   position: absolute;
+   bottom: 0px;
+   right: 0px;
+}
+
