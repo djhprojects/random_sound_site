@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
 .button {
     background-color: #0489B1; /* Blue (hopefully)*/
     border: none;
@@ -5,9 +7,16 @@
     color: white;
     padding: 15px 32px;
     text-align: center;
+    border-radius: 12px;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    font-family: 'Montserrat';
+}
+
+body {
+    font-family: 'Montserrat';
+    font-size: 30px;
 }
 
 .logo {
@@ -15,3 +24,4 @@
    bottom: 0px;
    right: 0px;
 }
+
